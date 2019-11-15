@@ -61,6 +61,53 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-十大经典排序算法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/15/%E5%8D%81%E5%A4%A7%E7%BB%8F%E5%85%B8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" class="article-date">
+  <time datetime="2019-11-15T10:35:38.000Z" itemprop="datePublished">2019-11-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/15/%E5%8D%81%E5%A4%A7%E7%BB%8F%E5%85%B8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/">十大经典排序算法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="十大经典排序算法动画与解析，看我就够了！（配代码完全版）"><a href="#十大经典排序算法动画与解析，看我就够了！（配代码完全版）" class="headerlink" title="十大经典排序算法动画与解析，看我就够了！（配代码完全版）"></a>十大经典排序算法动画与解析，看我就够了！（配代码完全版）</h2><p><strong>排序算法是《数据结构与算法》中最基本的算法之一。</strong></p>
+<p>[百度链接]（<a href="http://www.baidu.com）" target="_blank" rel="noopener">http://www.baidu.com）</a></p>
+<p><a href="http://www.bing.com" target="_blank" rel="noopener">http://www.bing.com</a></p>
+<p>排序算法可以分为<strong>内部排序</strong>和<strong>外部排序</strong>。</p>
+<p>内部排序是数据记录在内存中进行排序。</p>
+<p>而外部排序是因排序的数据很大，一次不能容纳全部的排序记录，在排序过程中需要访问外存。</p>
+<p>常见的内部排序算法有：插入排序、希尔排序、选择排序、冒泡排序、归并排序、快速排序、堆排序、基数排序等。</p>
+        
+          <p class="article-more-link">
+            <a href="/2019/11/15/%E5%8D%81%E5%A4%A7%E7%BB%8F%E5%85%B8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/11/15/%E5%8D%81%E5%A4%A7%E7%BB%8F%E5%85%B8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" data-id="ck300j8pa0002r0uj4cqdgrh0" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-my-first-blog" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/11/15/my-first-blog/" class="article-date">
@@ -92,7 +139,7 @@
 <li>从游标中取数据 fetch 游标名 into 变量 （游标名%found：找到数据。游标名%notfound：没有找到数据）</li>
 <li>关闭游标 close 游标名</li>
 </ol>
-<p>前言<br>本文简单记录下oracle数据库中，如何用plsql编程、以及存储过程的创建和使用。<br>相关的概念我就不列举了，大家不清楚的可以自行搜索，本篇主要列举实际的sql语法。<br>那plsql编程，大家可以使用windows的命令行，也可以使用工具进行编写调试，我这边主要使用Oracle Sql Developer来举例。</p>
+<p>前言[百度]（<a href="https://www.baidu.com）" target="_blank" rel="noopener">https://www.baidu.com）</a><br>本文简单记录下oracle数据库中，如何用plsql编程、以及存储过程的创建和使用。<br>相关的概念我就不列举了，大家不清楚的可以自行搜索，本篇主要列举实际的sql语法。<br>那plsql编程，大家可以使用windows的命令行，也可以使用工具进行编写调试，我这边主要使用Oracle Sql Developer来举例。</p>
 <p>1 plsql编程<br>1.1 程序结构<br>首先说说plsql的程序，可以分为3个部分：声明部分、可执行部分、异常处理部分。其中declare部分用来声明变量或者游标（结果集类型变量），如果程序中没有变量声明则可以省略。</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DECLARE</span></span><br><span class="line">  <span class="comment">--声明变量、游标</span></span><br><span class="line">  <span class="comment">-- 相当于java中的 public class A&#123;&#125;</span></span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line">  <span class="comment">--执行部分，相当于java中的main方法</span></span><br><span class="line">  <span class="comment">--可以进行异常处理</span></span><br><span class="line">  dbms_output.put_line(<span class="string">'hello world'</span>);</span><br><span class="line"><span class="keyword">END</span>;</span><br></pre></td></tr></table></figure>
 
@@ -207,7 +254,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/15/my-first-blog/" data-id="ck2zzi0sy0000n0uje0gz7u9t" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/15/my-first-blog/" data-id="ck300j8p60001r0ujclqu5n05" class="article-share-link">Share</a>
       
       
     </footer>
@@ -256,7 +303,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/15/hello-world/" data-id="ck2zzi0u00001n0uj3nyf9x0x" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/15/hello-world/" data-id="ck300j8oj0000r0uj118rf7yd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -295,6 +342,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/11/15/%E5%8D%81%E5%A4%A7%E7%BB%8F%E5%85%B8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/">十大经典排序算法</a>
+          </li>
         
           <li>
             <a href="/2019/11/15/my-first-blog/">my-first-blog</a>

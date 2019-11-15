@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="游标，存储过程，存储函数，触发器1.游标游标是一种 PL&#x2F;SQL 控制结构;可以对 SQL 语句的处理进行显示控制，便于对表的行数据 逐条进行处理。 游标并不是一个数据库对象，只是存留在内存中  语法： cursor 游标名 is 查询结果集 操作步骤  声明游标 打开游标 从游标中取数据 fetch 游标名 into 变量 （游标名%found：找到数据。游标名%notfound：没有找到数据）">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-15T10:08:33.519Z">
+<meta property="og:updated_time" content="2019-11-15T10:24:44.649Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -93,7 +93,7 @@
 <li>从游标中取数据 fetch 游标名 into 变量 （游标名%found：找到数据。游标名%notfound：没有找到数据）</li>
 <li>关闭游标 close 游标名</li>
 </ol>
-<p>前言<br>本文简单记录下oracle数据库中，如何用plsql编程、以及存储过程的创建和使用。<br>相关的概念我就不列举了，大家不清楚的可以自行搜索，本篇主要列举实际的sql语法。<br>那plsql编程，大家可以使用windows的命令行，也可以使用工具进行编写调试，我这边主要使用Oracle Sql Developer来举例。</p>
+<p>前言[百度]（<a href="https://www.baidu.com）" target="_blank" rel="noopener">https://www.baidu.com）</a><br>本文简单记录下oracle数据库中，如何用plsql编程、以及存储过程的创建和使用。<br>相关的概念我就不列举了，大家不清楚的可以自行搜索，本篇主要列举实际的sql语法。<br>那plsql编程，大家可以使用windows的命令行，也可以使用工具进行编写调试，我这边主要使用Oracle Sql Developer来举例。</p>
 <p>1 plsql编程<br>1.1 程序结构<br>首先说说plsql的程序，可以分为3个部分：声明部分、可执行部分、异常处理部分。其中declare部分用来声明变量或者游标（结果集类型变量），如果程序中没有变量声明则可以省略。</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DECLARE</span></span><br><span class="line">  <span class="comment">--声明变量、游标</span></span><br><span class="line">  <span class="comment">-- 相当于java中的 public class A&#123;&#125;</span></span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line">  <span class="comment">--执行部分，相当于java中的main方法</span></span><br><span class="line">  <span class="comment">--可以进行异常处理</span></span><br><span class="line">  dbms_output.put_line(<span class="string">'hello world'</span>);</span><br><span class="line"><span class="keyword">END</span>;</span><br></pre></td></tr></table></figure>
 
@@ -208,7 +208,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/15/my-first-blog/" data-id="ck2zzi0sy0000n0uje0gz7u9t" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/15/my-first-blog/" data-id="ck300j8p60001r0ujclqu5n05" class="article-share-link">Share</a>
       
       
     </footer>
@@ -216,6 +216,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2019/11/15/%E5%8D%81%E5%A4%A7%E7%BB%8F%E5%85%B8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          十大经典排序算法
+        
+      </div>
+    </a>
   
   
     <a href="/2019/11/15/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
@@ -255,6 +264,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/11/15/%E5%8D%81%E5%A4%A7%E7%BB%8F%E5%85%B8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/">十大经典排序算法</a>
+          </li>
         
           <li>
             <a href="/2019/11/15/my-first-blog/">my-first-blog</a>
